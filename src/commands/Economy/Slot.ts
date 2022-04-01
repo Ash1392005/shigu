@@ -24,6 +24,7 @@ export default class Command extends BaseCommand {
     if (M.from !== "120363041438860321@g.us")
       return void M.reply(
         `You can't bet here. Use ${this.client.config.prefix}support 𝐭𝐨 𝐦𝐚𝐤𝐞 𝐲𝐨𝐮𝐫 𝐠𝐟 𝐡𝐚𝐩𝐩𝐲.`
+      );
      
     const user = M.sender.jid;
     const time = 45000;
