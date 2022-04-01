@@ -25,7 +25,7 @@ export default class Command extends BaseCommand {
            MessageType.text
         ))
         const n = [
-            'https://telegra.ph/file/9bf85b0af7e1096532ee1.mp4'
+            'https://c.tenor.com/IUqyJKXy4OAAAAAC/iron-man-avengers.gif'
         ]
         let rin = n[Math.floor(Math.random() * n.length)]
         return void this.client.sendMessage(M.from, { url: rin }, MessageType.video, {quoted:M.WAMessage,
