@@ -53,7 +53,7 @@ export default class EventHandler {
       }
       const buttonMessage: any = {
         contentText: `${text}`,
-        footerText: "✞︎☠︎︎ Elaina ✞︎☠︎︎",
+        footerText: "✞︎☠︎︎ Moba ✞︎☠︎︎",
         buttons: buttons,
         headerType: 1,
       };
@@ -86,17 +86,17 @@ export default class EventHandler {
     /*const text = add
 			? `- ${group.subject || "___"} -\n\n✞︎☠︎︎ *Group Description:*\n${
 					group.desc
-			  }\n\nHope you follow the rules and have fun!\n\n*‣ ${event.participants
+			  }\n\nHope you follow the rules and have fun Bitch!\n\n*‣ ${event.participants
 					.map((jid) => `@${jid.split("@")[0]}`)
 					.join(", ")}*`
 			: event.action === "remove"
-			? `Goodbye *@${
+			? `ⓣⓗⓐⓣ ⓑⓘⓣⓒⓗ ⓒⓐⓝⓣ ⓙⓞⓘⓝ ⓐⓖⓐⓘⓝ *@${
 					event.participants[0].split("@")[0]
-			  }* ✞︎☠︎︎𖣘, please don't come back here again .`
-			: `Ara Ara looks like *@${
+			  }* ✞︎☠︎︎𖣘, ⓕⓤⓒⓚ ⓨⓞⓤ ⓑⓘⓣⓒⓗ ⓝⓔⓥⓔⓡ ⓒⓞⓜⓔ ⓐⓖⓐⓘⓝ .`
+			: `ⓑⓡⓞ ⓟⓐⓡⓣⓨ? *@${
 					event.participants[0].split("@")[0]
-			  }* got ${this.client.util.capitalize(event.action)}d${
-					event.actor ? ` by *@${event.actor.split("@")[0]}*` : ""
+			  }* ⓑⓔⓒ ⓨⓞⓘ ⓑⓔⓒⓐⓜⓔ ⓐⓓⓜⓘⓝ ${this.client.util.capitalize(event.action)}d${
+					event.actor ? ` ⓑⓨ *@${event.actor.split("@")[0]}*` : ""
 			  }`;*/
     const contextInfo = {
       mentionedJid: event.actor
@@ -130,7 +130,7 @@ export default class EventHandler {
             group.desc
           }\n\n💧𝙊𝙬𝙣𝙚𝙧𝙨𝙝𝙞𝙥
 
-𝘊𝘳𝘦𝘢𝘵𝘦𝘥, 𝘱𝘰𝘸𝘦𝘳𝘦𝘥 & 𝘱𝘳𝘦𝘴𝘦𝘯𝘵𝘦𝘥 𝘣𝘺 *Lord Savage*
+𝘊𝘳𝘦𝘢𝘵𝘦𝘥, 𝘱𝘰𝘸𝘦𝘳𝘦𝘥 & 𝘱𝘳𝘦𝘴𝘦𝘯𝘵𝘦𝘥 𝘣𝘺 *Falling*
 
 ━━❰🦋🕊️!\n\n*‣ ${event.participants
             .map((jid) => `@${jid.split("@")[0]}`)
@@ -165,7 +165,7 @@ export default class EventHandler {
         {
           caption: `Goodbye *@${
             event.participants[0].split("@")[0]
-          }* ✞︎☠︎︎, please don't come back here again.`,
+          }* ✞︎☠︎︎, 𝓓𝓸𝓷𝓽 𝓼𝓱𝓸𝔀 𝔂𝓸𝓾𝓻 𝓯𝓪𝓬𝓮 𝓪𝓰𝓪𝓲𝓷 𝓫𝓲𝓽𝓬𝓱.`,
           contextInfo,
         }
       ));
@@ -182,9 +182,9 @@ export default class EventHandler {
       );
     }
     if (demote) {
-      const text = `Ara Ara looks like *@${
+      const text = `𝓨𝓸𝓾𝓻 𝕤𝕚𝕟 ⓦⓐⓢ ⓣⓞⓞ ⓜⓤⓒⓗ ⓑⓘⓣⓒ ⓨⓞⓤ *@${
         event.participants[0].split("@")[0]
-      }* got demoted.`;
+      }* 🅖🅞🅣 🅓🅔🅜🅞🅣🅔🅓.`;
       return void this.client.sendMessage(
         event.jid,
         text,
