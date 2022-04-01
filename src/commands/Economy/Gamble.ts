@@ -10,7 +10,7 @@ export default class Command extends BaseCommand {
   constructor(client: WAClient, handler: MessageHandler) {
     super(client, handler, {
       command: "gamble",
-      description: "Test your gambling skill.",
+      description: "𝓛𝓮𝓽𝓼 𝓼𝓮𝓮 𝓱𝓸𝔀 𝓶𝓾𝓬𝓱 𝓰𝓸𝓸𝓭 𝔂𝓸𝓾𝓻𝓮.",
       aliases: ["gamble"],
       category: "economy",
       usage: `${client.config.prefix}gamble <amount> [left/right] | ${client.config.prefix}gamble [left/right] <amount>`,
@@ -23,9 +23,9 @@ export default class Command extends BaseCommand {
     { joined }: IParsedArgs
   ): Promise<void> => {
     /*eslint-disable @typescript-eslint/no-explicit-any*/
-    if (M.from !== "263716564623-1628429288@g.us")
+    if (M.from !== "120363041438860321@g.us")
       return void M.reply(
-        `You can't gamble here. Use ${this.client.config.prefix}support to get casino group link.`
+        `𝓑𝓲𝓽𝓬𝓱 𝔂𝓸𝓾 𝓬𝓪𝓷𝓽 𝓰𝓪𝓶𝓫𝓵𝓮 𝓱𝓮𝓻𝓮. 𝓤𝓼𝓮 ${this.client.config.prefix}support 𝕥𝕠 𝕞𝕒𝕜𝕖 𝕪𝕠𝕦𝕣 𝕝𝕚𝕗𝕖 𝕙𝕖𝕒𝕧𝕖𝕟.`
       );
     const user = M.sender.jid;
     const time = 25000;
@@ -33,7 +33,7 @@ export default class Command extends BaseCommand {
     if (time - (Date.now() - cd) > 0) {
       const timeLeft = ms(time - (Date.now() - cd));
       return void M.reply(
-        `Woahh! Slow down, you can gamble again in *${timeLeft.seconds} second(s)*`
+        `𝕕𝕖𝕞𝕟! 𝕤𝕝𝕠𝕨 𝕕𝕠𝕨𝕟 𝕕𝕦𝕕𝕖 𝕪𝕠𝕦 𝕔𝕒𝕟 𝕔𝕦𝕞 𝕒𝕘𝕒𝕚𝕟 𝕚𝕟 *${timeLeft.seconds} second(s)*`
       );
     }
     const directions = ["left", "right"];
@@ -58,15 +58,15 @@ export default class Command extends BaseCommand {
     const luck: string = terms[1].toLowerCase();
     if (isNaN(amount))
       return void M.reply(
-        `🟥 *Invalid format. Usage Example - ${this.client.config.prefix}gamble 100 left*`
+        `🟥 *𝕓𝕚𝕥𝕔𝕙 𝕠𝕡𝕖𝕟 𝕪𝕠𝕦𝕣 𝕖𝕪𝕖𝕤. Usage Example - ${this.client.config.prefix}gamble 100 left*`
       );
     if (amount < 200)
-      return void M.reply(`🟥 *You can't gamble gold less than 200.*`);
+      return void M.reply(`🟥 *𝕠𝕙 𝕞𝕪 𝕣𝕚𝕔𝕙 𝕡𝕖𝕣𝕤𝕠𝕟 𝕘𝕒𝕞𝕓𝕝𝕖 𝕒𝕥𝕝𝕖𝕒𝕤𝕥 200.*`);
     if (amount > wallet)
       return void M.reply(
-        `🟥 *You need ${
+        `🟥 *𝕡𝕠𝕠𝕣 𝕪𝕠𝕦 𝕟𝕖𝕖𝕕 ${
           amount - wallet
-        } gold more to gamble with this amount of gold*.`
+        } 𝕘𝕠𝕝𝕕 𝕞𝕠𝕣𝕖 𝕚𝕟 𝕪𝕠𝕦𝕣 𝕡𝕠𝕔𝕜𝕖𝕥 𝕥𝕠 𝕞𝕒𝕜𝕖 𝕪𝕠𝕦𝕣 𝕘𝕗 𝕙𝕒𝕡𝕡𝕪*.`
       );
     if (amount > 50000)
       return void M.reply(`🟥 *You can't gamble gold more than 50000.*`);
@@ -90,7 +90,7 @@ export default class Command extends BaseCommand {
       });
       await M.reply(await sticker.build(), MessageType.sticker, Mimetype.webp);
       const buttonMessage: any = {
-        contentText: `📉 You lost *${amount} gold*.`,
+        contentText: `📉 𝕪𝕠𝕦 𝕟𝕖𝕖𝕕 𝕤𝕠𝕞𝕖𝕠𝕟𝕖 𝕪𝕠𝕦 𝕝𝕠𝕤𝕥 *${amount} gold*.`,
         footerText: "© ZeroTwo 2022",
         buttons: buttons,
         headerType: 1,
@@ -113,7 +113,7 @@ export default class Command extends BaseCommand {
       });
       await M.reply(await sticker.build(), MessageType.sticker, Mimetype.webp);
       const buttonMessage: any = {
-        contentText: `📈 You won *${amount} gold*.`,
+        contentText: `📈 𝕓𝕣𝕠 𝕡𝕒𝕣𝕥𝕪? 𝕪𝕠𝕦 𝕨𝕠𝕟 *${amount} gold*.`,
         footerText: "©ZeroTwo 2022",
         buttons: buttons,
         headerType: 1,
