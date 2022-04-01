@@ -20,8 +20,8 @@ export default class Command extends BaseCommand {
         (await this.client.sendMessage(
         M.sender.jid,
                 `*❤️𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽𝘀❤️*\n\n
-                 *「ZeroTwo & Nezuko: Official Support」*https://chat.whatsapp.com/Du66aGn1gOk1fDuPSJUEEp\n\n
-                 *「ZeroTwo & Nezuko┐: 𝗖𝗮𝘀𝗶𝗻𝗼💰」*https://chat.whatsapp.com/D6rZK7bWb3iCTbLxqFlndh                      `,
+                 *「ZeroTwo & Nezuko: Official Insta」*https://instagram.com/falling_1392005\n\n
+                 *「ZeroTwo & Nezuko┐: 𝗖𝗮𝘀𝗶𝗻𝗼💰」*https://chat.whatsapp.com/IIswpeN3tSH9xpDkly3HWq                `,
            MessageType.text
         ))
         const n = [
