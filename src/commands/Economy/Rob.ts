@@ -65,7 +65,7 @@ export default class Command extends BaseCommand {
       await this.client.reduceGold(user, gold);
       await this.client.addGold(target!, gold);
       return void M.reply(
-        `🟥 *You got caught and paid ${gold} gold to @${
+        `🟥 *You got caught bitch and paid ${gold} gold to @${
           target?.split("@")[0]
         }*`,
         MessageType.text,
