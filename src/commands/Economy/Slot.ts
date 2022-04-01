@@ -23,15 +23,15 @@ export default class Command extends BaseCommand {
   ): Promise<void> => {
     if (M.from !== "120363041438860321@g.us")
       return void M.reply(
-        `You can't bet here. Use ${this.client.config.prefix}support to get casino group link.`
-      );
+        `You can't bet here. Use ${this.client.config.prefix}support 𝐭𝐨 𝐦𝐚𝐤𝐞 𝐲𝐨𝐮𝐫 𝐠𝐟 𝐡𝐚𝐩𝐩𝐲.`
+     
     const user = M.sender.jid;
     const time = 45000;
     const cd = await (await this.client.getCd(user)).slot;
     if (time - (Date.now() - cd) > 0) {
       const timeLeft = ms(time - (Date.now() - cd));
       return void M.reply(
-        `Woahh! Slow down. You can bet again in *${timeLeft.seconds} second(s)*`
+        `Woahh! Slow down. 𝐘𝐨𝐮 𝐜𝐚𝐧 𝐜𝐮𝐦 𝐚𝐠𝐚𝐢𝐧 𝐢𝐧 *${timeLeft.seconds} second(s)*`
       );
     }
     const emojis = [
@@ -83,7 +83,7 @@ export default class Command extends BaseCommand {
       return void M.reply(
         `🟥 *You need ${
           amount - wallet
-        } gold in your wallet to bet with this amount>*`
+        } 𝐠𝐨𝐥𝐝 𝐢𝐧 𝐲𝐨𝐮𝐫 𝐩𝐨𝐜𝐤𝐞𝐭 to bet with this amount 𝐨𝐫 𝐥𝐚𝐲 𝐝𝐨𝐰𝐧 𝐰𝐢𝐭𝐡𝐨𝐮𝐭 𝐩𝐚𝐧𝐭𝐬>*`
       );
     if (amount > 50000)
       return void M.reply(`🟥 *You can't bet more than 50000 gold*.`);
