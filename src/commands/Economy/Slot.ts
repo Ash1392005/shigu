@@ -36,15 +36,15 @@ export default class Command extends BaseCommand {
       );
     }
     const emojis = [
-      "\t\t🌺 : ❤️ : 🌸\n》 ❤️ : ☘ : ❤️ 《\n\t\t☘ : ☘ : 🌸",
+      "\t\t💀 : ❤️ : 🌸\n》 ❤️ : ☘ : ❤️ 《\n\t\t☘ : ☘ : 🌸",
       "\t\t☘ : ☘ : 🌸\n》 ❤️ : ☘ : 🌸 《\n\t\t🌸 : ❤️ : ❤️",
-      "\t\t🌸 : 🌺 : ☘\n》 ❤️ : ☘ : ☘ 《\n\t\t❤️ : ❤️ : 🌸",
+      "\t\t🌸 : 💀 : ☘\n》 ❤️ : ☘ : ☘ 《\n\t\t❤️ : ❤️ : 🌸",
     ];
     const i = emojis[Math.floor(Math.random() * emojis.length)];
     const Emoji = [
-      "\t\t🌸 : ❤️ : 🌺\n》 ☘ : ☘ : 🌺 《\n\t\t☘ : 🌸 : 🌸",
-      "\t\t☘ : 🌸 : ☘\n》 ❤️ : ❤️ : ❤️ 《\n\t\t☘ : 🌸 : 🌸",
-      "\t\t🌺 : ☘ : ❤️\n》 🌺 : 🌸 : 🌸 《\n\t\t❤️ : ☘ : ☘",
+      "\t\t🌸 : ❤️ : 🌺\n》 ☘ : ☘ : 💀 《\n\t\t☘ : 🌸 : 🌸",
+      "\t\t☘ : ☘ : ☘\n》 ❤️ : ❤️ : ❤️ 《\n\t\t☘ : 🌸 : 🌸",
+      "\t\t🌺 : ☘ : ❤️\n》 💀 : 🌸 : 🌸 《\n\t\t❤️ : ☘ : ☘",
     ];
     const o = Emoji[Math.floor(Math.random() * Emoji.length)];
     const jack = [
@@ -87,7 +87,7 @@ export default class Command extends BaseCommand {
         } 𝐠𝐨𝐥𝐝 𝐢𝐧 𝐲𝐨𝐮𝐫 𝐩𝐨𝐜𝐤𝐞𝐭 to bet with this amount 𝐨𝐫 𝐥𝐚𝐲 𝐝𝐨𝐰𝐧 𝐰𝐢𝐭𝐡𝐨𝐮𝐭 𝐩𝐚𝐧𝐭𝐬>*`
       );
     if (amount > 15000)
-      return void M.reply(`🟥 *You can't bet more than 50000 gold*.`);
+      return void M.reply(`🟥 *You can't bet more than 15000 gold*.`);
     const head = `🎰 *SLOT MACHINE* 🎰`;
     const buttons = [
       {
