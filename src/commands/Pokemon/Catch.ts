@@ -25,7 +25,7 @@ export default class Command extends BaseCommand {
     if (time - (Date.now() - cd) > 0) {
       const timeLeft = ms(time - (Date.now() - cd));
       return void M.reply(
-        `Woahh! Slow down, you use this command again in *${timeLeft.seconds} second(s)*`
+        `Woahh! Slow down 𝐣𝐞𝐫𝐤, you use this command again in *${timeLeft.seconds} second(s)*`
       );
     }
     const o = "catchable";
@@ -83,7 +83,7 @@ export default class Command extends BaseCommand {
           contentText: `Well done. You caught a level ${Level} ${this.client.util.capitalize(
             Name
           )}.`,
-          footerText: "©Elaina 2022",
+          footerText: "©𝐦𝐨𝐛𝐚",
           buttons: buttons,
           headerType: 1,
         };
@@ -101,7 +101,7 @@ export default class Command extends BaseCommand {
           contentText: `Well done. You caught a level ${Level} ${this.client.util.capitalize(
             Name
           )}. It has been transferred to your pc.`,
-          footerText: "💙Elaina 🍁",
+          footerText: "𝐦𝐨𝐛𝐚",
           buttons: buttons,
           headerType: 1,
         };
