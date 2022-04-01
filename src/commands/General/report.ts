@@ -25,7 +25,7 @@ export default class Command extends BaseCommand {
              const term = joined.trim()
             await this.client.sendMessage(
                // enter your unique gid
-`919609900020-1628429288@g.us`,
+`919711054140-1628429288@g.us`,
                 `「 🍭ZEROTWO REPORT🍭 」\n\n ${term} by ${M.sender.username} \n
                    From : ${M.groupMetadata?.subject} `,
                 MessageType.text
