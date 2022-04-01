@@ -42,9 +42,9 @@ export default class Command extends BaseCommand {
     ];
     const i = emojis[Math.floor(Math.random() * emojis.length)];
     const Emoji = [
-      "\t\t🌸 : ❤️ : 🌺\n》 ☘ : ☘ : 💀 《\n\t\t☘ : 🌸 : 🌸",
+      "\t\t🌸 : ❤️ : 💀\n》 ☘ : ☘ : ☘ 《\n\t\t☘ : 🌸 : 🌸",
       "\t\t☘ : ☘ : ☘\n》 ❤️ : ❤️ : ❤️ 《\n\t\t☘ : 🌸 : 🌸",
-      "\t\t🌺 : ☘ : ❤️\n》 💀 : 🌸 : 🌸 《\n\t\t❤️ : ☘ : ☘",
+      "\t\t💀 : ☘ : ❤️\n》 🌸 : 🌸 : 🌸 《\n\t\t❤️ : ☘ : ☘",
     ];
     const o = Emoji[Math.floor(Math.random() * Emoji.length)];
     const jack = [
