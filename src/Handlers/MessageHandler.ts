@@ -302,6 +302,7 @@ export default class MessageHandler {
       }, 120000);
     });
   };
+  
   handleState = async (): Promise<void> => {
     const text = `𝐦𝐨𝐛𝐚 𝐢𝐬 𝐮𝐩 𝐟𝐨𝐫 𝐟𝐮𝐜𝐤`;
     await this.client.sendMessage(
