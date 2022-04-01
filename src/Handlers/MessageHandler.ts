@@ -146,7 +146,7 @@ export default class MessageHandler {
       return void null;
     if (!command)
       return void M.reply(
-        `🍁Ahhh shit man you don't know how to type *${this.client.config.prefix}help* well fine in that case you will die here.`
+        `🍁Ahhh shit bitch ⓨⓞⓤ ⓓⓞⓝⓣ ⓗⓐⓥⓔ ⓑⓡⓐⓘⓝ ⓢⓞ ⓣⓨⓟⓔ *${this.client.config.prefix}help* 🅦🅔🅛🅛 🅘🅝 🅣🅗🅐🅣 🅒🅐🅢🅔 🅨🅞🅤 🅦🅘🅛🅛 🅓🅘🅔 🅗🅔🅡🅔.`
       );
     const user = await this.client.getUser(M.sender.jid);
     if (user.ban) return void M.reply("You're Banned from using commands.");
@@ -165,7 +165,7 @@ export default class MessageHandler {
       command.config?.modsOnly &&
       !this.client.config.mods?.includes(M.sender.jid)
     ) {
-      return void M.reply(`𝐨𝐧𝐥𝐲 𝐛𝐞𝐚𝐮𝐭𝐢𝐟𝐮𝐥 𝐩𝐞𝐨𝐩𝐥𝐞 𝐜𝐚𝐧 𝐮𝐬𝐞 𝐭𝐡𝐢𝐬 𝐜𝐨𝐦𝐦𝐚𝐧𝐝..`);
+      return void M.reply(`𝐨𝐧𝐥𝐲 𝐛𝐞𝐚𝐮𝐭𝐢𝐟𝐮𝐥 𝐩𝐞𝐨𝐩𝐥𝐞 𝐜𝐚𝐧 𝐮𝐬𝐞 𝐭𝐡𝐢𝐬 𝐜𝐨𝐦𝐦𝐚𝐧𝐝 𝐠𝐨 𝐰𝐚𝐬𝐡 𝐲𝐨𝐮𝐫 𝐟𝐚𝐜𝐞 𝐟𝐢𝐫𝐬𝐭..`);
     }
     if (command.config?.adminOnly && !M.sender.isAdmin)
       return void M.reply(
@@ -284,7 +284,7 @@ export default class MessageHandler {
       ];
       const buttonMessage: any = {
         contentText: `*A claimable character Appeared!*\n\n🎀 *Name: ${chara.name}*\n\n💬 *About:* ${chara.about}\n\n📛 *Source: ${source[0].anime.title}*\n\n💰 *Price: ${price}*\n\n*[Use ${this.client.config.prefix}claim to have this character in your gallery]*`,
-        footerText: "💙 Elaina 💙",
+        footerText: "💙 𝐦𝐨𝐛𝐚 💙",
         buttons: buttons,
         headerType: 4,
         imageMessage: media?.message?.imageMessage,
@@ -304,18 +304,18 @@ export default class MessageHandler {
   };
 
   handleState = async (): Promise<void> => {
-    const text = `Reconnected🚀 (Elaina👾)`;
+    const text = `𝐦𝐨𝐛𝐚 𝐢𝐬 𝐮𝐩 𝐟𝐨𝐫 𝐟𝐮𝐜𝐤`;
     await this.client.sendMessage(
-      "263716564623-1628429288@g.us",
+      "120363041438860321@g.us",
       text,
       MessageType.text
     );
   };
 
   sendReconnectMessage = async (): Promise<void> => {
-    const text = `I'm back, Darling !! 💖w💖`;
+    const text = `I'm back, 𝐁𝐚𝐛𝐞 !! 💖w💖`;
     await this.client.sendMessage(
-      "263716564623-1628429288@g.us",
+      "120363041438860321@g.us",
       text,
       MessageType.text
     );
