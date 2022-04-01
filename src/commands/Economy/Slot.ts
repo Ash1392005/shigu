@@ -112,7 +112,7 @@ export default class Command extends BaseCommand {
       await M.reply(buttonMessage, MessageType.buttonsMessage);
     }
     if (z === "win") {
-      const i = Math.floor(Math.random() * 5);
+      const i = Math.floor(Math.random() * 2);
       const gold = amount * i;
       await this.client.addGold(user, gold);
       await this.client.DB.cd.updateOne(
@@ -129,7 +129,7 @@ export default class Command extends BaseCommand {
       await M.reply(buttonMessage, MessageType.buttonsMessage);
     }
     if (z == "jackpot") {
-      const gold = amount * 15;
+      const gold = amount * 3;
       await this.client.addGold(user, gold);
       await this.client.DB.cd.updateOne(
         { jid: user },
