@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
 
      run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
            const n = [
-           'https://telegra.ph/file/be3e4eeee879b30f8afef.mp4'
+           './assets/videos/Rin.mp4'
         ]
         let chitoge = n[Math.floor(Math.random() * n.length)]
         if (!parsedArgs.joined) {
@@ -35,7 +35,7 @@ export default class Command extends BaseCommand {
                     categories[info.config.category].push(info)
                 }
             }
-            let text = `*✞︎☠︎︎Hello*✞︎☠︎︎! *${M.sender.username}*\n\n•╚『Note✞︎☠︎︎Side』╝\n•*I'm 𑁍Elaina𑁍 a bot build to make your WhatsApp enjoyable*\n\n━━❰•Note✞︎☠︎︎𖣘Side･❱━━\n╚『Read the rules』╝\n\nMy name is Elaina✞︎☠︎︎\n\nMy prefix is #\n\n1 | *Don't Call* Bots to avoid Blocking.\n\n2 | *Don't Spam* in Groups to avoid Blocking\n\n`
+            let text = `*✞︎☠︎︎Hello*✞︎☠︎︎! *${M.sender.username}*\n\n•╚『Note✞︎☠︎︎Side』╝\n•*I'm 𑁍Moba𑁍 a bot build to make your WhatsApp and Life enjoyable*\n\n━━❰•Note✞︎☠︎︎𖣘Side･❱━━\n╚『Read the rules』╝\n\nMy name is Moba✞︎☠︎︎\n\nMy prefix is +\n\n1 | *Don't Call* Bots to avoid Blocking.\n\n2 | *Don't Spam* in Groups to avoid Blocking\n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
                 text += `╚━❰☠︎︎𝑩𝒐𝒕 ${this.emojis[keys.indexOf(key)]} ${this.client.util.capitalize(key)}•𖣘❱━╝\n• \`\`\`${categories[
@@ -49,13 +49,15 @@ export default class Command extends BaseCommand {
 
 
             caption: `${text}
- ──❅┈[ *☠︎︎✞︎𖣔Elaina☠︎︎✞︎𖣔* ]┈❅───
+ ──❅┈[ *☠︎︎✞︎𝓜𝓸𝓫𝓪☠︎︎✞︎𖣔* ]┈❅───
 ┌────────────┈𑁍𖣘
 │   💙 *𝗵𝗲𝗹𝗹𝗼*
+│ⓑⓞⓣ ⓘⓝⓢⓣ-https://instagram.com/_mobasshirachaudhary_
+│ⓞⓦⓝⓔⓡ ⓘⓝⓢⓣⓐ-https://instagram.com/falling_1392005
 │    ✞︎☠︎︎*Bang Bang* 𑁍𖣘߷☆✯
 └────────────┈𖣘
 ❅┈[𝐇𝐚𝐯𝐞 𝐆𝐫𝐞𝐚𝐭 𝐃𝐚𝐲]┈❅
-📝 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
+📝 *Note: Use ${this.client.config.prefix}help <command_name> 🅣🅞 🅜🅐🅚🅔 🅨🅞🅤🅡 🅛🅘🅕🅔 🅑🅔🅣🅣🅔🅡*` }
             )
         }
         const key = parsedArgs.joined.toLowerCase()
