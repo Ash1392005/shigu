@@ -91,7 +91,7 @@ export default class Command extends BaseCommand {
       await M.reply(await sticker.build(), MessageType.sticker, Mimetype.webp);
       const buttonMessage: any = {
         contentText: `📉 𝕪𝕠𝕦 𝕟𝕖𝕖𝕕 𝕤𝕠𝕞𝕖𝕠𝕟𝕖 𝕪𝕠𝕦 𝕝𝕠𝕤𝕥 *${amount} gold*.`,
-        footerText: "© ZeroTwo 2022",
+        footerText: "© moba",
         buttons: buttons,
         headerType: 1,
       };
@@ -114,7 +114,7 @@ export default class Command extends BaseCommand {
       await M.reply(await sticker.build(), MessageType.sticker, Mimetype.webp);
       const buttonMessage: any = {
         contentText: `📈 𝕓𝕣𝕠 𝕡𝕒𝕣𝕥𝕪? 𝕪𝕠𝕦 𝕨𝕠𝕟 *${amount} gold*.`,
-        footerText: "©ZeroTwo 2022",
+        footerText: "© moba",
         buttons: buttons,
         headerType: 1,
       };
