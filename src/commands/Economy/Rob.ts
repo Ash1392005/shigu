@@ -18,14 +18,14 @@ export default class Command extends BaseCommand {
   }
 
   run = async (M: ISimplifiedMessage): Promise<void> => {
-    if (M.from === "263716564623-1628429288@g.us")
+    if (M.from === ""120363041438860321@g.us"")
       return void M.reply(`You can't rob someone here. Go somewhere else`);
     const time = 900000;
     const cd = await (await this.client.getUser(M.sender.jid)).lastRob;
     if (time - (Date.now() - cd) > 0) {
       const timeLeft = ms(time - (Date.now() - cd));
       return void M.reply(
-        `You can rob again after ${timeLeft.minutes} minute(s), *${timeLeft.seconds} second(s)*. Give it a break.`
+        `𝕪𝕠𝕦 𝕔𝕒𝕟 𝕔𝕦𝕞 𝕒𝕘𝕒𝕚𝕟 𝕚𝕟 ${timeLeft.minutes} minute(s), *${timeLeft.seconds} second(s)*. 𝔾𝕚𝕧𝕖 𝕚𝕥 𝕒 𝕓𝕣𝕖𝕒𝕜.`
       );
     }
     const user = M.sender.jid;
