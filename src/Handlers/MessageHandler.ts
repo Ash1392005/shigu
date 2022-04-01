@@ -284,7 +284,7 @@ export default class MessageHandler {
       ];
       const buttonMessage: any = {
         contentText: `*A claimable character Appeared!*\n\n🎀 *Name: ${chara.name}*\n\n💬 *About:* ${chara.about}\n\n📛 *Source: ${source[0].anime.title}*\n\n💰 *Price: ${price}*\n\n*[Use ${this.client.config.prefix}claim to have this character in your gallery]*`,
-        footerText: "💙 𝐦𝐨𝐛𝐚 💙",
+        footerText: "💙 Moba 💙",
         buttons: buttons,
         headerType: 4,
         imageMessage: media?.message?.imageMessage,
@@ -302,7 +302,6 @@ export default class MessageHandler {
       }, 120000);
     });
   };
-
   handleState = async (): Promise<void> => {
     const text = `𝐦𝐨𝐛𝐚 𝐢𝐬 𝐮𝐩 𝐟𝐨𝐫 𝐟𝐮𝐜𝐤`;
     await this.client.sendMessage(
